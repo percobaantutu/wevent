@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Varela Round;
+}
+
+.slide {
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-208px * 3));
+  }
+}
+
+@media (min-width: 769px) {
+  .slide {
+    animation: scroll 20s linear infinite;
+  }
+
+  /* Update nilai transform ketika lebar layar lebih dari 768px */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-320px * 3));
+    }
+  }
+}
+
+.active {
+  background-color: #009381;
+  color: #ffffff;
+}

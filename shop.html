@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Signika&family=Varela+Round&display=swap" rel="stylesheet" />
+    <title>Shop</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="src/hamburgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/swiper-bundle.css" />
+    <link rel="shortcut icon" href="img/logo/favicon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/e3a3d029bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="hero w-full h-screen md:h-auto lg:px-16" style="background-image: url(img/img1.png); background-repeat: no-repeat; background-size: cover">
+      <nav class="pt-5">
+        <div class="nav-container flex items-center p-5 py-5 md:px-8 justify-between">
+          <div class="w-44 h-auto">
+            <img src="img/logo/logo.png" alt="wevent" class="" />
+          </div>
+          <div class="flex items-center gap-5 lg:hidden">
+            <button class="hamburger hamburger--elastic" type="button">
+              <span class="hamburger-box top-1">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <a href="#"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff"></i></a>
+          </div>
+          <div class="hidden lg:block">
+            <ul class="flex gap-6 text-lg text-slate-100">
+              <li class="hover:text-white"><a href="index.html">Home</a></li>
+              <li class="hover:text-white"><a href="performer.html">Performer</a></li>
+              <div class="flex flex-col relative">
+                <li class="hover:text-white dropdown-slide-btn-lg">
+                  <a href="#">Music Shows <i class="fa-solid fa-chevron-down ml-4 dropdown-arrow-lg transition"></i></a>
+                </li>
+                <div class="hidden dropdown-slide-lg absolute top-8">
+                  <div class="w-40 h-auto flex flex-col gap-2 p-2 text-sm text-slate-300 bg-color6">
+                    <li class="hover:text-white"><a href="event.html" class="tracking-widest">Events</a></li>
+                    <li class="hover:text-white"><a href="schedule.html" class="tracking-widest">Event Schedule</a></li>
+                  </div>
+                </div>
+              </div>
+              <li class="hover:text-white"><a href="#">Shop</a></li>
+
+              <li class="hover:text-white"><a href="contact.html">Contact</a></li>
+              <li class="">
+                <a href="#" class=""><i class="fa-solid fa-cart-shopping fa-xl hover:text-white"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="nav-menu hidden z-10">
+        <div class="menu-slide flex flex-col pl-10 pt-7 bg-slate-800 text-slate-300 w-2/3 top-0 bottom-0 left-0 fixed">
+          <div class="min-w-full h-auto">
+            <img src="img/logo/logo.png" alt="wevent" class="w-48 h-auto" />
+          </div>
+          <ul class="flex flex-col gap-5 text-xl md:text-2xl font-semibold mt-14">
+            <li class="hover:text-white"><a href="index.html" class="tracking-widest">Home</a></li>
+            <li class="hover:text-white"><a href="performer.html" class="tracking-widest">Performer</a></li>
+            <li class="hover:text-white dropdown-slide-btn">
+              <a href="#" class="tracking-widest">Music Shows<i class="fa-solid fa-chevron-down ml-4 dropdown-arrow transition"></i></a>
+            </li>
+            <div class="hidden dropdown-slide">
+              <div class="w-1/2 h-auto flex flex-col gap-3 p-2">
+                <li class="hover:text-white"><a href="event.html" class="tracking-widest">Events</a></li>
+                <li class="hover:text-white"><a href="schedule.html" class="tracking-widest">Event Schedule</a></li>
+              </div>
+            </div>
+            <li class="hover:text-white"><a href="#" class="tracking-widest">Shop</a></li>
+
+            <li class="hover:text-white"><a href="contact.html" class="tracking-widest">Contact</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="px-6 md:px-20 lg:px-72 flex flex-col justify-center items-center gap-6 py-28 lg:py-48 text-center">
+        <p class="text-2xl text-slate-100" data-aos="fade-up" data-aos-duration="1000">OUR SHOP</p>
+        <div class="text-4xl">
+          <h2 class="text-slate-100 font-bold" data-aos="fade-up" data-aos-duration="1200">ALL PRODUCT</h2>
+        </div>
+        <p class="text-slate-100 text-base lg:tracking-wide" data-aos="fade-up" data-aos-duration="1400">
+          Musical show organized world wide, you can join this musical show very easily through this site and confirm your ticket with a click
+        </p>
+      </section>
+    </section>
+    <section style="background-image: url(img/img2.png); object-fit: cover">
+      <div class="p-10 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4" data-aos="fade-left" data-aos-duration="1000">
+        <div class="product-item max-w-[440px] md:max-w-[300px] h-4/5 rounded-2xl bg-slate-950 p-4 flex flex-col group justify-center items-center">
+          <div class="flex flex-col justify-center items-center relative group">
+            <img src="img/shop/product1.jpg" alt="mug" class="object-cover max-w[400px] max-h[490px]" />
+            <button class="p-2 text-white text-center bg-slate-950 text-lg add-to-cart transition duration-500 group-hover:-translate-y-20 max-w-[50%] absolute bottom-0 opacity-0 group-hover:opacity-100">Add to Cart</button>
+          </div>
+          <div class="product-content text-center p-3 text-lg text-white tracking-widest z-30">
+            <p>Coffee Mug</p>
+            <p>Price - $ 7.00 USD</p>
+          </div>
+        </div>
+        <div class="product-item max-w-[440px] md:max-w-[300px] h-4/5 rounded-2xl bg-slate-950 p-4 flex flex-col group justify-center items-center">
+          <div class="flex flex-col justify-center items-center relative group">
+            <img src="img/shop/product2.jpg" alt="mug" class="object-cover max-w[400px] max-h[490px]" />
+            <button class="p-2 text-white text-center bg-slate-950 text-lg add-to-cart transition duration-500 group-hover:-translate-y-20 max-w-[50%] absolute bottom-0 opacity-0 group-hover:opacity-100">Add to Cart</button>
+          </div>
+          <div class="product-content text-center p-3 text-lg text-white tracking-widest z-30">
+            <p>Keychain</p>
+            <p>Price - $ 5.00 USD</p>
+          </div>
+        </div>
+        <div class="product-item max-w-[440px] md:max-w-[300px] h-4/5 rounded-2xl bg-slate-950 p-4 flex flex-col group justify-center items-center">
+          <div class="flex flex-col justify-center items-center relative group">
+            <img src="img/shop/product3.jpg" alt="mug" class="object-cover max-w[400px] max-h[490px]" />
+            <button class="p-2 text-white text-center bg-slate-950 text-lg add-to-cart transition duration-500 group-hover:-translate-y-20 max-w-[50%] absolute bottom-0 opacity-0 group-hover:opacity-100">Add to Cart</button>
+          </div>
+          <div class="product-content text-center p-3 text-lg text-white tracking-widest z-30">
+            <p>Duffle Bag</p>
+            <p>Price - $ 25.00 USD</p>
+          </div>
+        </div>
+        <div class="product-item max-w-[440px] md:max-w-[300px] h-4/5 rounded-2xl bg-slate-950 p-4 flex flex-col group justify-center items-center">
+          <div class="flex flex-col justify-center items-center relative group">
+            <img src="img/shop/product4.jpg" alt="mug" class="object-cover max-w[400px] max-h[490px]" />
+            <button class="p-2 text-white text-center bg-slate-950 text-lg add-to-cart transition duration-500 group-hover:-translate-y-20 max-w-[50%] absolute bottom-0 opacity-0 group-hover:opacity-100">Add to Cart</button>
+          </div>
+          <div class="product-content text-center p-3 text-lg text-white tracking-widest z-30">
+            <p>Music T-shirt</p>
+            <p>Price - $ 25.00 USD</p>
+          </div>
+        </div>
+        <div class="product-item max-w-[440px] md:max-w-[300px] h-4/5 rounded-2xl bg-slate-950 p-4 flex flex-col group justify-center items-center">
+          <div class="flex flex-col justify-center items-center relative group">
+            <img src="img/shop/product6.png" alt="mug" class="object-cover max-w[400px] max-h[490px]" />
+            <button class="p-2 text-white text-center bg-slate-950 text-lg add-to-cart transition duration-500 group-hover:-translate-y-20 max-w-[50%] absolute bottom-0 opacity-0 group-hover:opacity-100">Add to Cart</button>
+          </div>
+          <div class="product-content text-center p-3 text-lg text-white tracking-widest z-30">
+            <p>Cap Event</p>
+            <p>Price - $ 25.00 USD</p>
+          </div>
+        </div>
+        <div class="product-item max-w-[440px] md:max-w-[300px] h-4/5 rounded-2xl bg-slate-950 p-4 flex flex-col group justify-center items-center">
+          <div class="flex flex-col justify-center items-center relative group">
+            <img src="img/shop/product5.jpg" alt="mug" class="object-cover max-w[400px] max-h[490px]" />
+            <button class="p-2 text-white text-center bg-slate-950 text-lg add-to-cart transition duration-500 group-hover:-translate-y-20 max-w-[50%] absolute bottom-0 opacity-0 group-hover:opacity-100">Add to Cart</button>
+          </div>
+          <div class="product-content text-center p-3 text-lg text-white tracking-widest z-30">
+            <p>Shopping bag</p>
+            <p>Price - $ 8.00 USD</p>
+          </div>
+        </div>
+        <div class="product-item max-w-[440px] md:max-w-[300px] h-4/5 rounded-2xl bg-slate-950 p-4 flex flex-col group justify-center items-center">
+          <div class="flex flex-col justify-center items-center relative group">
+            <img src="img/shop/product7.jpg" alt="mug" class="object-cover max-w[400px] max-h[490px]" />
+            <button class="p-2 text-white text-center bg-slate-950 text-lg add-to-cart transition duration-500 group-hover:-translate-y-20 max-w-[50%] absolute bottom-0 opacity-0 group-hover:opacity-100">Add to Cart</button>
+          </div>
+          <div class="product-content text-center p-3 text-lg text-white tracking-widest z-30">
+            <p>Notebook</p>
+            <p>Price - $ 13.00 USD</p>
+          </div>
+        </div>
+        <div class="product-item max-w-[440px] md:max-w-[300px] h-4/5 rounded-2xl bg-slate-950 p-4 flex flex-col group justify-center items-center">
+          <div class="flex flex-col justify-center items-center relative group">
+            <img src="img/shop/product8.jpg" alt="mug" class="object-cover max-w[400px] max-h[490px]" />
+            <button class="p-2 text-white text-center bg-slate-950 text-lg add-to-cart transition duration-500 group-hover:-translate-y-20 max-w-[50%] absolute bottom-0 opacity-0 group-hover:opacity-100">Add to Cart</button>
+          </div>
+          <div class="product-content text-center p-3 text-lg text-white tracking-widest z-30">
+            <p>Water Bottle</p>
+            <p>Price - $ 13.00 USD</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-5 py-8 lg:px-40 lg:py-11" style="background-image: url(img/img4.png); object-fit: cover">
+      <div class="flex flex-wrap justify-between gap-5 mt-6" data-aos="fade-up" data-aos-duration="1000">
+        <div class="flex flex-col gap-6 w-full lg:w-auto">
+          <img src="img/logo/logo.png" alt="" class="w-44" />
+          <div class="text-slate-100 text-base tracking-widest">
+            <p>Musical show organized world</p>
+            <p class="mt-2">wide you can join musical</p>
+          </div>
+          <div>
+            <ul class="flex items-center gap-3 text-white tracking-widest">
+              <li class="bg-slate-600 py-1 px-2 rounded-full hover:bg-tertiary">
+                <a href=""><i class="fa-brands fa-tiktok fa-sm"></i></a>
+              </li>
+              <li class="bg-slate-600 py-1 px-2 rounded-full hover:bg-tertiary">
+                <a href=""><i class="fa-brands fa-instagram fa-xs"></i></a>
+              </li>
+              <li class="bg-slate-600 py-1 px-2 rounded-full hover:bg-tertiary">
+                <a href=""><i class="fa-brands fa-youtube fa-xs"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-slate-200 tracking-widest">
+          <p class="text-2xl mb-4">INFORMATION</p>
+          <ul class="text-base flex flex-col gap-2 group">
+            <li class="group-hover:text-white"><a href="schedule.html">Upcoming Events</a></li>
+            <li class="group-hover:text-white"><a href="performer.html">Performer</a></li>
+            <li class="group-hover:text-white"><a href="ticket.html">Purchase Ticket</a></li>
+            <li class="group-hover:text-white"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="text-slate-200 tracking-widest max-w-[300px]">
+          <p class="text-2xl mb-4">Contact</p>
+          <p>Jl. Prof.Dr. Satrio Kav 11, Prof. Dr. Satrio, Satrio, Jakarta Selatan.</p>
+          <ul class="text-base flex flex-col gap-2 mt-2">
+            <li>+6282128459689</li>
+            <li>info@wevent.com</li>
+            <li>www.wevent.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="px-5 py-4 lg:px-40 bg-slate-950 flex flex-col justify-center gap-3 md:flex-row md:justify-between">
+      <div class="text-center text-white">
+        <p>Copyright &copy; Designed by <span class="font-bold tracking-widest">Restu Muhammad</span></p>
+      </div>
+      <div class="mx-auto md:mx-0 flex text-center gap-8">
+        <div><i class="fa-brands fa-cc-paypal fa-xl" style="color: #ffffff"></i></div>
+        <div><i class="fa-brands fa-cc-visa fa-xl" style="color: #ffffff"></i></div>
+        <div><i class="fa-brands fa-cc-mastercard fa-xl" style="color: #ffffff"></i></div>
+        <div><i class="fa-brands fa-google-wallet fa-xl" style="color: #ffffff"></i></div>
+      </div>
+    </footer>
+    <script src="src/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
